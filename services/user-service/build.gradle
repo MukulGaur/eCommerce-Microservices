@@ -7,7 +7,7 @@ plugins {
 
 sonar {
 	properties {
-		property "sonar.projectKey", "MukulGaur_eCommerce-Microservices"
+		property "sonar.projectKey", "mukulgaur_eCommerce-Microservices_user-service"
 		property "sonar.organization", "mukulgaur"
 		property "sonar.host.url", "https://sonarcloud.io"
 	}
