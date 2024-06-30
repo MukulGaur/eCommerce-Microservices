@@ -1,12 +1,10 @@
 package com.eCommerce.userservice.controller;
 
-//import io.swagger.annotations.Api;
 import com.eCommerce.userservice.model.User;
 import com.eCommerce.userservice.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/user")
 @RequiredArgsConstructor
 @Tag(name = "User", description = "User management APIs")
 public class UserController {
