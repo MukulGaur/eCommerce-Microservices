@@ -29,4 +29,4 @@ jobs:
         projectBaseDir: services/product-service
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ env.SONAR_TOKEN_PRODUCT }}
+        SONAR_TOKEN: 06ff5d696333d2cb5c025f01f802679abf733d10
