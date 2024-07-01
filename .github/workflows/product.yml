@@ -3,14 +3,14 @@ on:
   push:
     paths:
       - 'services/product-service/**'
-      - '.github/workflows/**'
+      # - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
       - 'services/product-service/**'
-      - '.github/workflows/**'
+      # - '.github/workflows/**'
     types:
       - opened
       - synchronize
