@@ -3,14 +3,14 @@ on:
   push:
     paths:
       - 'services/product-service/**'
-      # - '.github/workflows/**'
+      - '.github/workflows/**'
     branches:
       - master
 
   pull_request:
     paths:
       - 'services/product-service/**'
-      # - '.github/workflows/**'
+      - '.github/workflows/**'
     types:
       - opened
       - synchronize
@@ -26,7 +26,7 @@ jobs:
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       with:
-        projectBaseDir: services/product-service
+        projectBaseDir: ./services/product-service
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: 06ff5d696333d2cb5c025f01f802679abf733d10
