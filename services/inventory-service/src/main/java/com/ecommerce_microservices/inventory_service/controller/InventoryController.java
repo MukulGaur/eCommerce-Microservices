@@ -1,6 +1,5 @@
 package com.ecommerce_microservices.inventory_service.controller;
 
-import com.ecommerce_microservices.inventory_service.exception.InventoryNotFoundException;
 import com.ecommerce_microservices.inventory_service.model.Inventory;
 import com.ecommerce_microservices.inventory_service.service.InventoryService;
 import io.swagger.v3.oas.annotations.Operation;
