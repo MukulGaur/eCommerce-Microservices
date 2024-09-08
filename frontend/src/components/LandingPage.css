@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #19CC8B; */
+}
+
+.container {
+  width: fit-content !important;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem !important;
+  border-radius: 1rem;
+  border: none;
+  background-color: #515866;
+  box-shadow: 1px 1px 15px;
+  transition: height 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-grp {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top-btn {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.top-btn:hover {
+  transition: width 2s, height 4s;
+}
+
+.selected {
+  color: #19CC8B;
+  border-bottom: 3px solid #19CC8B;
+}
+
+.container .inputContainer {
+  position: relative;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+}
+
+.inputContainer label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: white;
+  transition: 0.5s;
+  text-transform: capitalize;
+}
+
+.inputContainer input:focus ~ label,
+.inputContainer input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #19CC8B;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #19CC8B;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.forget-pass p {
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
